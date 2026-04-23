@@ -1,0 +1,33 @@
+/* Apply a glowing effect to the card */
+.glow-card {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Add glow effect on hover */
+.glow-card:hover {
+    box-shadow: 0 0 20px rgb(255, 222, 11);
+    transform: scale(1.05);
+}
+
+/* Center the card content */
+.glow-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.glow-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Button hover effect */
+.glow-card .btn {
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.glow-card .btn:hover {
+    background: rgba(0, 123, 255, 0.9);
+    transform: scale(1.05);
+}
